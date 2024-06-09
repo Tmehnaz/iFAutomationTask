@@ -77,9 +77,12 @@ describe('Add item to cart test', async function(){
          let expectedMsg = "Thank you for your order!";
 
          expect(successfulMsg).to.equal(expectedMsg);
-
+         
+         
 
      })
+
+     await driver.quit();
 
  });
 

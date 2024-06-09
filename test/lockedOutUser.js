@@ -27,6 +27,9 @@ describe('Add item to cart test', async function(){
         let elementTxt = await element.getText();
         let errorMsg = await elementTxt.isDisplayed();
         expect(errorMsg).to.be.true;
+
+        
           
     });
+    await driver.quit();
 });

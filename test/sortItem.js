@@ -64,4 +64,5 @@ describe('Add item to cart test', async function(){
             expect(sortedItems).to.deep.equal(expectedSortedItems);
         });
     }
+    await driver.quit();
  });
