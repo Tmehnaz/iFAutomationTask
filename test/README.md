@@ -48,15 +48,12 @@ npm i mochawesome(to generate repost)
 ## Guideline to run the project
 
 ``bash 
+
 npm test 
 
 
 ## Contribution
 
-the major part of this demo project was done from my prior experience working as a SQA Engineer. I tried my best to reflect on
-the instructions given which focused on the clean code, concise and resuasble code strategy with some run time bugs. But the 
-webdriver works perfectly fine where anyone intsalling the project can see the navigation of test suit running and completing 
-the task of automation where it only follows the positive scenrios. The code structure follows a standard which can extended 
-for further automation with proper dependencies and installation.   
+the major part of this demo project was done from my prior experience working as a SQA Engineer. I tried my best to reflect on the instructions given which focused on the clean code, concise and resuasble code strategy with some run time bugs. But the webdriver works perfectly fine where anyone intsalling the project can see the navigation of test suit running and completing the task of automation where it only follows the positive scenrios. The code structure follows a standard which can extended for further automation with proper dependencies and installation.   
 
 
