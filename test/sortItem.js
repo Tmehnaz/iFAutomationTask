@@ -62,6 +62,7 @@ describe('Add item to cart test', async function(){
             // Verify sorting order
             let expectedSortedItems = originalItems.slice().sort(expectedOrder);
             expect(sortedItems).to.deep.equal(expectedSortedItems);
+            
         });
     }
     await driver.quit();

@@ -1,0 +1,328 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2024-06-10T00:02:17.325Z",
+    "end": "2024-06-10T00:02:30.316Z",
+    "duration": 12991,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "abc133e7-4ceb-4032-8d83-04d22dc5c5b9",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6f193213-cbf0-40a9-b427-66c75add1dc1",
+          "title": "Add item to cart test",
+          "fullFile": "C:\\Users\\asuszenbook\\Swag LabTest Automation\\test\\customerPurchase.js",
+          "file": "\\test\\customerPurchase.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login",
+              "fullTitle": "Add item to cart test Login",
+              "timedOut": false,
+              "duration": 3126,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser(\"chrome\").build();\n        await driver.get(\"https://www.saucedemo.com/checkout-complete.html\");\n        await driver.findElement(By.id(\"user-name\")).sendKeys(\"standard_user\", Key.RETURN);\n        await driver.findElement(By.id(\"password\")).sendKeys(\"secret_sauce\",Key.RETURN);\n        // await StylePropertyMap\n        \n        await driver.findElement(By.id(\"login-button\")).click();\n        \n        // Verify successful login\n        let element = await driver.wait(until.elementLocated(By.xpath(\"//*[@id='header_container']/div[1]/div[2]/div\")), 10000)\n        let actualTxt = await element.getText();\n        let expectedTxt = \"Swag Labs\";\n        expect(actualTxt).to.equal(expectedTxt);",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"login-button\"]\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"login-button\"]\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\asuszenbook\\Swag LabTest Automation\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (test\\customerPurchase.js:25:9)",
+                "diff": null
+              },
+              "uuid": "ee3576f0-cf88-45c3-ae56-3e1d6a6e7c83",
+              "parentUUID": "6f193213-cbf0-40a9-b427-66c75add1dc1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add product",
+              "fullTitle": "Add item to cart test Add product",
+              "timedOut": false,
+              "duration": 234,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "let prodCount = 3;\nawait driver.findElement(By.id(\"add-to-cart-sauce-labs-backpack\")).click();\nawait driver.findElement(By.id(\"add-to-cart-sauce-labs-bike-light\")).click();\nawait driver.findElement(By.id(\"add-to-cart-sauce-labs-bolt-t-shirt\")).click();\nlet  cartIcon = await driver.findElement(By.className(\"shopping_cart_link\"));\nlet cartTxt = await cartIcon.getText();\nlet cartNotificationCount = parseInt(cartTxt);\nexpect(cartNotificationCount).to.equal(prodCount);",
+              "err": {
+                "message": "TypeError: expect is not a function",
+                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\customerPurchase.js:50:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "e39c388b-1054-4db0-a449-d00011a2e644",
+              "parentUUID": "6f193213-cbf0-40a9-b427-66c75add1dc1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Proceed to Checkout",
+              "fullTitle": "Add item to cart test Proceed to Checkout",
+              "timedOut": false,
+              "duration": 438,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.findElement(By.className(\"shopping_cart_link\")).click();\n        await driver.executeScript(\"window.scrollTo(0, document.body.scrollHeight)\");\n        await driver.findElement(By.id(\"checkout\")).click();\n        //CheckOut Info\n        await driver.findElement(By.id(\"first-name\")).sendKeys(\"John\", Key.RETURN);\n        await driver.findElement(By.id(\"last-name\")).sendKeys(\"Doe\", Key.RETURN);\n        await driver.findElement(By.id(\"postal-code\")).sendKeys(\"15140\", Key.RETURN);\n        await driver.executeScript(\"window.scrollTo(0, document.body.scrollHeight)\");\n        await  driver.findElement(By.id(\"continue\")).click();\n        //checkout overview  \n        await driver.executeScript(\"window.scrollTo(0, document.body.scrollHeight)\");   \n        await driver.sleep(5000);\n        await  driver.findElement(By.id(\"finish\")).click();   \n        \n        let msg = await driver.wait(until.elementsLocated(By.xpath(\"//*[@id='checkout_complete_container']/h2\")));\n        let successfulMsg = await msg.getText();\n         let expectedMsg = \"Thank you for your order!\";\n         expect(successfulMsg).to.equal(expectedMsg);\n         await sleep(5000);\n         \n     await driver.quit();",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"last-name\"]\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"last-name\"]\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\asuszenbook\\Swag LabTest Automation\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (test\\customerPurchase.js:65:9)",
+                "diff": null
+              },
+              "uuid": "3548e835-4616-4003-a4a9-a3c025486b20",
+              "parentUUID": "6f193213-cbf0-40a9-b427-66c75add1dc1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ee3576f0-cf88-45c3-ae56-3e1d6a6e7c83",
+            "e39c388b-1054-4db0-a449-d00011a2e644",
+            "3548e835-4616-4003-a4a9-a3c025486b20"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3798,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "61efdd37-f0e4-4387-86d4-12551795d3c1",
+          "title": "Add item to cart test",
+          "fullFile": "C:\\Users\\asuszenbook\\Swag LabTest Automation\\test\\lockedOutUser.js",
+          "file": "\\test\\lockedOutUser.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login",
+              "fullTitle": "Add item to cart test Login",
+              "timedOut": false,
+              "duration": 3275,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser(\"chrome\").build();\n        await driver.get(\"https://www.saucedemo.com/checkout-complete.html\");\n        await driver.findElement(By.id(\"user-name\")).sendKeys(\"locked_out_user\", Key.RETURN);\n        await driver.findElement(By.id(\"password\")).sendKeys(\"secret_sauce\",Key.RETURN);\n        await driver.findElement(By.id(\"login-button\")).click();\n        \n        \n        let element = await driver.wait(until.elementLocated(By.className(\"error-button\")), 10000)\n        let elementTxt = await element.getText();\n        let errorMsg = await elementTxt.isDisplayed();\n        expect(errorMsg).to.be.true;",
+              "err": {
+                "message": "TypeError: elementTxt.isDisplayed is not a function",
+                "estack": "TypeError: elementTxt.isDisplayed is not a function\n    at Context.<anonymous> (test\\lockedOutUser.js:28:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "3af264a6-7222-4353-a70e-a46070578a6a",
+              "parentUUID": "61efdd37-f0e4-4387-86d4-12551795d3c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3af264a6-7222-4353-a70e-a46070578a6a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3275,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "429ba12f-db02-4ba1-b952-07d1326846b3",
+          "title": "Add item to cart test",
+          "fullFile": "C:\\Users\\asuszenbook\\Swag LabTest Automation\\test\\sortItem.js",
+          "file": "\\test\\sortItem.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login",
+              "fullTitle": "Add item to cart test Login",
+              "timedOut": false,
+              "duration": 3681,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser(\"chrome\").build();\n        await driver.get(\"https://www.saucedemo.com/checkout-complete.html\");\n        await driver.findElement(By.id(\"user-name\")).sendKeys(\"standard_user\", Key.RETURN);\n        await driver.findElement(By.id(\"password\")).sendKeys(\"secret_sauce\",Key.RETURN);\n        await driver.findElement(By.id(\"login-button\")).click();\n        \n        // Verify successful login\n        let element = await driver.wait(until.elementsLocated(By.xpath(\"//*[@id='header_container']/div[1]/div[2]/div\")), 10000)\n        let actualTxt = await element.getText();\n        let expectedTxt = \"Swag Labs\";\n        expect(actualTxt).to.equal(expectedTxt);",
+              "err": {
+                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"login-button\"]\"}\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"login-button\"]\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\asuszenbook\\Swag LabTest Automation\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (test\\sortItem.js:22:9)",
+                "diff": null
+              },
+              "uuid": "dd157a1b-0e9e-459d-8c3d-663bbb49d363",
+              "parentUUID": "429ba12f-db02-4ba1-b952-07d1326846b3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Name (A to Z) sorting",
+              "fullTitle": "Add item to cart test Name (A to Z) sorting",
+              "timedOut": false,
+              "duration": 592,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n// Capture original list before sorting\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Perform sorting action\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// Capture the sorted list\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verify sorting order\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
+              "err": {
+                "message": "TypeError: expect is not a function",
+                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\sortItem.js:64:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "d35af5d1-54fa-43e8-9273-f30820d9ef32",
+              "parentUUID": "429ba12f-db02-4ba1-b952-07d1326846b3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Name (Z to A) sorting",
+              "fullTitle": "Add item to cart test Name (Z to A) sorting",
+              "timedOut": false,
+              "duration": 424,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n// Capture original list before sorting\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Perform sorting action\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// Capture the sorted list\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verify sorting order\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
+              "err": {
+                "message": "TypeError: expect is not a function",
+                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\sortItem.js:64:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "2ff22dee-1c17-45af-864b-abab783fa762",
+              "parentUUID": "429ba12f-db02-4ba1-b952-07d1326846b3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Price (low to high) sorting",
+              "fullTitle": "Add item to cart test Price (low to high) sorting",
+              "timedOut": false,
+              "duration": 633,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n// Capture original list before sorting\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Perform sorting action\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// Capture the sorted list\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verify sorting order\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
+              "err": {
+                "message": "TypeError: expect is not a function",
+                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\sortItem.js:64:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "c4a8b65c-bb7a-459a-95ff-313e5b91d106",
+              "parentUUID": "429ba12f-db02-4ba1-b952-07d1326846b3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Price (high to low) sorting",
+              "fullTitle": "Add item to cart test Price (high to low) sorting",
+              "timedOut": false,
+              "duration": 551,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n// Capture original list before sorting\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Perform sorting action\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// Capture the sorted list\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verify sorting order\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
+              "err": {
+                "message": "TypeError: expect is not a function",
+                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\sortItem.js:64:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "c72db569-3dd0-4d88-9d10-db140a35ce29",
+              "parentUUID": "429ba12f-db02-4ba1-b952-07d1326846b3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "dd157a1b-0e9e-459d-8c3d-663bbb49d363",
+            "d35af5d1-54fa-43e8-9273-f30820d9ef32",
+            "2ff22dee-1c17-45af-864b-abab783fa762",
+            "c4a8b65c-bb7a-459a-95ff-313e5b91d106",
+            "c72db569-3dd0-4d88-9d10-db140a35ce29"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5881,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
