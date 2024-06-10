@@ -14,6 +14,8 @@ describe('Add item to cart test', async function(){
     it("Login", async function(){
 
         driver = await new Builder().forBrowser("chrome").build();
+        await driver.manage().window().maximize();
+
 
         await driver.get("https://www.saucedemo.com/checkout-complete.html");
 
@@ -32,7 +34,7 @@ describe('Add item to cart test', async function(){
         
     });
     
-     //Sort Items
+     //declaring the sorting criteria
      
 
      const sortingOptions = [
@@ -42,24 +44,24 @@ describe('Add item to cart test', async function(){
         { optionTxt: "Price (high to low)", expectedOrder: (a, b) => parseFloat(b.substring(1)) - parseFloat(a.substring(1)) }
     ];
 
-    // Sorting tests
-    for (let { optionTxt, expectedOrder } of sortingOptions) {
+    
+    for (let { optionTxt, expectedOrder } of sortingOptions) {            //retrieving the sorting options
         it(`${optionTxt} sorting`, async function () {
             await driver.get("https://www.saucedemo.com/inventory.html");
 
-            // Capture original list before sorting
-            let productElements = await driver.findElements(By.className("inventory_item_name"));
+            
+            let productElements = await driver.findElements(By.className("inventory_item_name"));   // default sorting settings
             let originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));
 
-            // Perform sorting action
+            // Sorting according 4 criteria dynamically
             await driver.findElement(By.className("product_sort_container")).click();
             await driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();
 
-            // Capture the sorted list
+            // storing the sorted items
             let sortedElements = await driver.findElements(By.className("inventory_item_name"));
             let sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));
 
-            // Verify sorting order
+            // Verification of the sorted list
             let expectedSortedItems = originalItems.slice().sort(expectedOrder);
             expect(sortedItems).to.deep.equal(expectedSortedItems);
             

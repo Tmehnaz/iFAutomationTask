@@ -14,6 +14,7 @@ describe('Add item to cart test', async function(){
     it("Login", async function(){
 
         driver = await new Builder().forBrowser("chrome").build();
+        await driver.manage().window().maximize();
 
         await driver.get("https://www.saucedemo.com/checkout-complete.html");
 
@@ -48,6 +49,7 @@ describe('Add item to cart test', async function(){
         let cartTxt = await cartIcon.getText();
         let cartNotificationCount = parseInt(cartTxt);
         expect(cartNotificationCount).to.equal(prodCount);
+        await sleep(5000);
 
     });
 
