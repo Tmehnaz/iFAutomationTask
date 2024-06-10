@@ -1,17 +1,12 @@
 #  Swag Labs Test Automation 
 
-In this demo project I have used Selenium webdriver for Node.js environment to automate the given scenarios(3). Each version of 
-one scenario has been tested for the chrome browser only and windows platform. Three test cases come in a sequential manner.  
+In this demo project I have used Selenium webdriver for Node.js environment to automate the given scenarios(3) of the following demo e-commerce site "https://www.saucedemo.com/". Each version of one scenario has been tested for the chrome browser only and windows platform. Three test cases come in a sequential manner.  
 
 
 ## Introduction
 
 Mocha framework has been used for this project and to generate report both in raw and json formate, mochawesome
-has been implemented. To keep the project simple and precise for the demo, only the happy path of the scenarios are being added
-which basically shows how the ideal steps should direct the users to achieve the goal of each task. But the code structure 
-is curated in such a way that we can reuse them and modify them according to the future need of the testing scenario. The 
-purpose of this automation testing is to make a seamless experience for the users, lesser feedback loop while managing the 
-menial task with reuseable automated test suits.  
+has been implemented. To keep the project simple and precise for the demo, only the happy path of the scenarios are being added which basically shows how the ideal steps should direct the users to achieve the goal of each task. But the code structure is curated in such a way that we can reuse them and modify them according to the future need of the testing scenario. The purpose of this automation testing is to make a seamless experience for the users, lesser feedback loop while managing the menial task with reuseable automated test suits.  
 
 Test Scenario 1 - Add product to the cart:
 1. Login
@@ -37,6 +32,7 @@ Test Scenario 3: Locked-out user:
 ## Clone the Repositor
 
 ``bash
+
 git clone https://github.com/Tmehnaz/iFAutomationTask.git
 cd your-repo
 
