@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 9,
-    "start": "2024-06-10T00:11:52.016Z",
-    "end": "2024-06-10T00:12:05.916Z",
-    "duration": 13900,
+    "start": "2024-06-10T01:02:52.680Z",
+    "end": "2024-06-10T01:03:08.124Z",
+    "duration": 15444,
     "testsRegistered": 9,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0ffd063d-42ee-49bf-bf0d-65f667577cb6",
+      "uuid": "36e4f315-e1b0-45bc-b065-6547a88780df",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e44c900f-2cc9-42d7-a781-716c629571a0",
+          "uuid": "daddff21-b68f-4037-a27b-d9295a2b99fa",
           "title": "Add item to cart test",
           "fullFile": "C:\\Users\\asuszenbook\\Swag LabTest Automation\\test\\customerPurchase.js",
           "file": "\\test\\customerPurchase.js",
@@ -38,7 +38,7 @@
               "title": "Login",
               "fullTitle": "Add item to cart test Login",
               "timedOut": false,
-              "duration": 3452,
+              "duration": 6548,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"login-button\"]\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\asuszenbook\\Swag LabTest Automation\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (test\\customerPurchase.js:26:9)",
                 "diff": null
               },
-              "uuid": "54ec9dc2-18a3-4f68-8298-83a0a6da5b5c",
-              "parentUUID": "e44c900f-2cc9-42d7-a781-716c629571a0",
+              "uuid": "58b82663-a2a2-4d44-8379-4b3270262659",
+              "parentUUID": "daddff21-b68f-4037-a27b-d9295a2b99fa",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Add product",
               "fullTitle": "Add item to cart test Add product",
               "timedOut": false,
-              "duration": 310,
+              "duration": 532,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -73,8 +73,8 @@
                 "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\customerPurchase.js:51:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": null
               },
-              "uuid": "3ba0479c-eefe-4c9b-a8a3-e48d578177e7",
-              "parentUUID": "e44c900f-2cc9-42d7-a781-716c629571a0",
+              "uuid": "7a3cf943-2784-4800-a264-e27f0cc867af",
+              "parentUUID": "daddff21-b68f-4037-a27b-d9295a2b99fa",
               "isHook": false,
               "skipped": false
             },
@@ -82,7 +82,7 @@
               "title": "Proceed to Checkout",
               "fullTitle": "Add item to cart test Proceed to Checkout",
               "timedOut": false,
-              "duration": 582,
+              "duration": 440,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -95,8 +95,8 @@
                 "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"last-name\"]\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\asuszenbook\\Swag LabTest Automation\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (test\\customerPurchase.js:67:9)",
                 "diff": null
               },
-              "uuid": "e80eaad0-eac0-4b54-b171-b1fd1806a774",
-              "parentUUID": "e44c900f-2cc9-42d7-a781-716c629571a0",
+              "uuid": "e9bf6cdc-651b-493b-a2c9-9bad9888ec1a",
+              "parentUUID": "daddff21-b68f-4037-a27b-d9295a2b99fa",
               "isHook": false,
               "skipped": false
             }
@@ -104,19 +104,19 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "54ec9dc2-18a3-4f68-8298-83a0a6da5b5c",
-            "3ba0479c-eefe-4c9b-a8a3-e48d578177e7",
-            "e80eaad0-eac0-4b54-b171-b1fd1806a774"
+            "58b82663-a2a2-4d44-8379-4b3270262659",
+            "7a3cf943-2784-4800-a264-e27f0cc867af",
+            "e9bf6cdc-651b-493b-a2c9-9bad9888ec1a"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 4344,
+          "duration": 7520,
           "root": false,
           "rootEmpty": false,
           "_timeout": 0
         },
         {
-          "uuid": "32ec728c-a694-4d1d-8290-f5105adc5ff3",
+          "uuid": "c35af998-173b-4cbb-95fc-216ba684254b",
           "title": "Add item to cart test",
           "fullFile": "C:\\Users\\asuszenbook\\Swag LabTest Automation\\test\\lockedOutUser.js",
           "file": "\\test\\lockedOutUser.js",
@@ -127,7 +127,7 @@
               "title": "Login",
               "fullTitle": "Add item to cart test Login",
               "timedOut": false,
-              "duration": 3775,
+              "duration": 4031,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -140,8 +140,8 @@
                 "estack": "TypeError: elementTxt.isDisplayed is not a function\n    at Context.<anonymous> (test\\lockedOutUser.js:30:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
                 "diff": null
               },
-              "uuid": "09a9570a-290c-429d-bdfe-bdf9438d57c8",
-              "parentUUID": "32ec728c-a694-4d1d-8290-f5105adc5ff3",
+              "uuid": "ff993cdf-6f0e-45e0-ae1a-c6693b6dd681",
+              "parentUUID": "c35af998-173b-4cbb-95fc-216ba684254b",
               "isHook": false,
               "skipped": false
             }
@@ -149,17 +149,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "09a9570a-290c-429d-bdfe-bdf9438d57c8"
+            "ff993cdf-6f0e-45e0-ae1a-c6693b6dd681"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3775,
+          "duration": 4031,
           "root": false,
           "rootEmpty": false,
           "_timeout": 0
         },
         {
-          "uuid": "38f2153c-73c9-4554-b706-42cbd1080579",
+          "uuid": "2a3a0f12-fdac-4566-959c-82d8414c2bc0",
           "title": "Add item to cart test",
           "fullFile": "C:\\Users\\asuszenbook\\Swag LabTest Automation\\test\\sortItem.js",
           "file": "\\test\\sortItem.js",
@@ -170,7 +170,7 @@
               "title": "Login",
               "fullTitle": "Add item to cart test Login",
               "timedOut": false,
-              "duration": 3565,
+              "duration": 3758,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -179,12 +179,12 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\n        await driver.manage().window().maximize();\n        await driver.get(\"https://www.saucedemo.com/checkout-complete.html\");\n        await driver.findElement(By.id(\"user-name\")).sendKeys(\"standard_user\", Key.RETURN);\n        await driver.findElement(By.id(\"password\")).sendKeys(\"secret_sauce\",Key.RETURN);\n        await driver.findElement(By.id(\"login-button\")).click();\n        \n        // Verify successful login\n        let element = await driver.wait(until.elementsLocated(By.xpath(\"//*[@id='header_container']/div[1]/div[2]/div\")), 10000)\n        let actualTxt = await element.getText();\n        let expectedTxt = \"Swag Labs\";\n        expect(actualTxt).to.equal(expectedTxt);",
               "err": {
-                "message": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"login-button\"]\"}\n  (Session info: chrome=125.0.6422.142)",
-                "estack": "NoSuchElementError: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[id=\"login-button\"]\"}\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async toWireValue (node_modules\\selenium-webdriver\\lib\\webdriver.js:146:15)\n    at async C:\\Users\\asuszenbook\\Swag LabTest Automation\\node_modules\\selenium-webdriver\\lib\\webdriver.js:192:16\n    at async forEachKey (node_modules\\selenium-webdriver\\lib\\webdriver.js:186:9)\n    at async convertKeys (node_modules\\selenium-webdriver\\lib\\webdriver.js:191:3)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:738:22)\n    at async Context.<anonymous> (test\\sortItem.js:24:9)",
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async Context.<anonymous> (test\\sortItem.js:22:9)",
                 "diff": null
               },
-              "uuid": "5a30fdf6-cd4b-4b06-b137-90db1b942135",
-              "parentUUID": "38f2153c-73c9-4554-b706-42cbd1080579",
+              "uuid": "dcd82b38-1507-4d02-bafa-e9418fec7b93",
+              "parentUUID": "2a3a0f12-fdac-4566-959c-82d8414c2bc0",
               "isHook": false,
               "skipped": false
             },
@@ -192,21 +192,21 @@
               "title": "Name (A to Z) sorting",
               "fullTitle": "Add item to cart test Name (A to Z) sorting",
               "timedOut": false,
-              "duration": 775,
+              "duration": 36,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n// Capture original list before sorting\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Perform sorting action\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// Capture the sorted list\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verify sorting order\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
+              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));   // default sorting settings\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Sorting according 4 criteria dynamically\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// storing the sorted items\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verification of the sorted list\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
               "err": {
-                "message": "TypeError: expect is not a function",
-                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\sortItem.js:66:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async Context.<anonymous> (test\\sortItem.js:50:13)",
                 "diff": null
               },
-              "uuid": "9437547d-62f7-4a11-85fe-e9831d798ef2",
-              "parentUUID": "38f2153c-73c9-4554-b706-42cbd1080579",
+              "uuid": "424e572f-5555-43a3-94c3-5b05108e9037",
+              "parentUUID": "2a3a0f12-fdac-4566-959c-82d8414c2bc0",
               "isHook": false,
               "skipped": false
             },
@@ -214,21 +214,21 @@
               "title": "Name (Z to A) sorting",
               "fullTitle": "Add item to cart test Name (Z to A) sorting",
               "timedOut": false,
-              "duration": 576,
+              "duration": 12,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n// Capture original list before sorting\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Perform sorting action\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// Capture the sorted list\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verify sorting order\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
+              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));   // default sorting settings\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Sorting according 4 criteria dynamically\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// storing the sorted items\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verification of the sorted list\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
               "err": {
-                "message": "TypeError: expect is not a function",
-                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\sortItem.js:66:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async Context.<anonymous> (test\\sortItem.js:50:13)",
                 "diff": null
               },
-              "uuid": "3fa5b85a-a5c5-408c-abaa-fac321efba9b",
-              "parentUUID": "38f2153c-73c9-4554-b706-42cbd1080579",
+              "uuid": "75d5dfe0-3778-4e5f-a6d7-e3ce32c5494f",
+              "parentUUID": "2a3a0f12-fdac-4566-959c-82d8414c2bc0",
               "isHook": false,
               "skipped": false
             },
@@ -236,21 +236,21 @@
               "title": "Price (low to high) sorting",
               "fullTitle": "Add item to cart test Price (low to high) sorting",
               "timedOut": false,
-              "duration": 412,
+              "duration": 4,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n// Capture original list before sorting\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Perform sorting action\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// Capture the sorted list\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verify sorting order\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
+              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));   // default sorting settings\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Sorting according 4 criteria dynamically\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// storing the sorted items\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verification of the sorted list\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
               "err": {
-                "message": "TypeError: expect is not a function",
-                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\sortItem.js:66:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async Context.<anonymous> (test\\sortItem.js:50:13)",
                 "diff": null
               },
-              "uuid": "ffb8c355-fd98-4d78-8e2f-516304e9f6d8",
-              "parentUUID": "38f2153c-73c9-4554-b706-42cbd1080579",
+              "uuid": "461d0976-2552-4d3a-a40e-ff6c6ff7b2eb",
+              "parentUUID": "2a3a0f12-fdac-4566-959c-82d8414c2bc0",
               "isHook": false,
               "skipped": false
             },
@@ -258,21 +258,21 @@
               "title": "Price (high to low) sorting",
               "fullTitle": "Add item to cart test Price (high to low) sorting",
               "timedOut": false,
-              "duration": 420,
+              "duration": 28,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
               "context": null,
-              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n// Capture original list before sorting\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Perform sorting action\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// Capture the sorted list\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verify sorting order\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
+              "code": "await driver.get(\"https://www.saucedemo.com/inventory.html\");\n\nlet productElements = await driver.findElements(By.className(\"inventory_item_name\"));   // default sorting settings\nlet originalItems = await Promise.all(productElements.map(async (element) => await element.getText()));\n// Sorting according 4 criteria dynamically\nawait driver.findElement(By.className(\"product_sort_container\")).click();\nawait driver.findElement(By.xpath(`//option[contains(text(),'${optionTxt}')]`)).click();\n// storing the sorted items\nlet sortedElements = await driver.findElements(By.className(\"inventory_item_name\"));\nlet sortedItems = await Promise.all(sortedElements.map(async (element) => await element.getText()));\n// Verification of the sorted list\nlet expectedSortedItems = originalItems.slice().sort(expectedOrder);\nexpect(sortedItems).to.deep.equal(expectedSortedItems);",
               "err": {
-                "message": "TypeError: expect is not a function",
-                "estack": "TypeError: expect is not a function\n    at Context.<anonymous> (test\\sortItem.js:66:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "message": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)",
+                "estack": "NoSuchWindowError: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=125.0.6422.142)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:521:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:514:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:446:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:740:17)\n    at async Context.<anonymous> (test\\sortItem.js:50:13)",
                 "diff": null
               },
-              "uuid": "1b4570b3-02ec-4df1-a3fc-b4d511943523",
-              "parentUUID": "38f2153c-73c9-4554-b706-42cbd1080579",
+              "uuid": "57f4768e-359f-47a8-9832-fbcb66d7c4b0",
+              "parentUUID": "2a3a0f12-fdac-4566-959c-82d8414c2bc0",
               "isHook": false,
               "skipped": false
             }
@@ -280,15 +280,15 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "5a30fdf6-cd4b-4b06-b137-90db1b942135",
-            "9437547d-62f7-4a11-85fe-e9831d798ef2",
-            "3fa5b85a-a5c5-408c-abaa-fac321efba9b",
-            "ffb8c355-fd98-4d78-8e2f-516304e9f6d8",
-            "1b4570b3-02ec-4df1-a3fc-b4d511943523"
+            "dcd82b38-1507-4d02-bafa-e9418fec7b93",
+            "424e572f-5555-43a3-94c3-5b05108e9037",
+            "75d5dfe0-3778-4e5f-a6d7-e3ce32c5494f",
+            "461d0976-2552-4d3a-a40e-ff6c6ff7b2eb",
+            "57f4768e-359f-47a8-9832-fbcb66d7c4b0"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 5748,
+          "duration": 3838,
           "root": false,
           "rootEmpty": false,
           "_timeout": 0
